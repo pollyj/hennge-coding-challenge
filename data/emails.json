@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "sent_at_date": "2020/01/03",
+        "sent_at_time": "00:20",
+        "sender": "aaa@example.com",
+        "to": [
+            "zzz@example.com"
+        ],
+        "subject": "[ HR-888 ] Notice of official announcement",
+        "body": "Email 1 content",
+        "attachments": []
+    },
+    {
+        "id": 2,
+        "sent_at_date": "2020/01/03",
+        "sent_at_time": "00:10",
+        "sender": "bbb@example.com",
+        "to": [
+            "yyy@example.com"
+        ],
+        "subject": "[web:333] 'Web Contact'",
+        "body": "Email 2 content",
+        "attachments": []
+    },
+    {
+        "id": 3,
+        "sent_at_date": "2020/01/03",
+        "sent_at_time": "00:00",
+        "sender": "ccc@example.com",
+        "to": [
+            "xxx@example.com",
+            "www@example.com"
+        ],
+        "subject": "Happy New Year! Greetings for the New Year.",
+        "body": "Email 3 content",
+        "attachments": [
+            "newsyearscard.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "sent_at_date": "2020/01/01",
+        "sent_at_time": "15:00",
+        "sender": "ddd.dddd@example.com",
+        "to": [
+            "vvv.vvv@example.com",
+            "uuu@example.com"
+        ],
+        "subject": "[HR-887(Revised: Office Expansion Project Team)] Notice of off...",
+        "body": "Email 4 content",
+        "attachments": []
+    },
+    {
+        "id": 5,
+        "sent_at_date": "2020/01/01",
+        "sent_at_time": "14:00",
+        "sender": "eee@example.com",
+        "to": [
+            "sss@example.com",
+            "rrr@example.com",
+            "ttt@example.com"
+        ],
+        "subject": "[Github] Logout page",
+        "body": "Email 5 content",
+        "attachments": []
+    },
+    {
+        "id": 6,
+        "sent_at_date": "2020/01/01",
+        "sent_at_time": "13:00",
+        "sender": "fff.ffff@example.com",
+        "to": [
+            "qqq.qqq@example.com"
+        ],
+        "subject": "[dev]Postfix 3.1.12 / 3.2.9 / 3.3.4 / 3.4.5",
+        "body": "Email 6 content",
+        "attachments": []
+    },
+    {
+        "id": 7,
+        "sent_at_date": "2020/01/01",
+        "sent_at_time": "12:00",
+        "sender": "ggg@example.com",
+        "to": [
+            "ppp@example.com"
+        ],
+        "subject": "Re: [Github] Brush-up on loading animation",
+        "body": "Email 7 content",
+        "attachments": []
+    },
+    {
+        "id": 8,
+        "sent_at_date": "2020/01/01",
+        "sent_at_time": "11:00",
+        "sender": "hhh.hhh@example.com",
+        "to": [
+            "ooo.ooo@example.com"
+        ],
+        "subject": "Workplace Summary for sample, Inc.: Jun 2 - Jun 9",
+        "body": "Email 8 content",
+        "attachments": [
+            "summary.pdf"
+        ]
+    },
+    {
+        "id": 9,
+        "sent_at_date": "2019/12/31",
+        "sent_at_time": "15:30",
+        "sender": "iii@example.com",
+        "to": [
+            "nnn@example.com"
+        ],
+        "subject": "I love you",
+        "body": "Email 9 content",
+        "attachments": [
+            "loveisblind.jpg"
+        ]
+    },
+    {
+        "id": 10,
+        "sent_at_date": "2019/12/31",
+        "sent_at_time": "15:00",
+        "sender": "",
+        "to": [],
+        "subject": "[info:888] ABC EQUIPMENT COMPANY",
+        "body": "Email 10 content",
+        "attachments": []
+    }
+]
