@@ -1,17 +1,17 @@
 import React from 'react';
 import EmailDisplay from '../email-display/EmailDisplay';
+import NoMatches from '../no-matches/NoMatches';
 import './ResultsList.css';
 import emailData from '../../data/emails.json';
 
 export default function ResultsList(props) {
-    console.log('emailData:', emailData)
 
-    function test() {
-        emailData.forEach((item) => {
-            return (
-                <p>{item.body}</p>
-            )
-        })
+    const renderSearchResults = () => {
+        if (emailData) {
+            return emailData.map((email) => <EmailDisplay props={email} />)
+        } else {
+            return <NoMatches />
+        }
     }
 
     return (
@@ -26,8 +26,7 @@ export default function ResultsList(props) {
                     <p>top</p>
                 </div>
             </div>
-            {emailData.map((email) => <EmailDisplay props={email} />
-            )}
+            {renderSearchResults()}
         </div>
     )
 }
