@@ -121,8 +121,10 @@
         "id": 10,
         "sent_at_date": "2019/12/31",
         "sent_at_time": "15:00",
-        "sender": "",
-        "to": [],
+        "sender": "Pablo-Diego",
+        "to": [
+            "Pablo-Diego-José-Francisco"
+        ],
         "subject": "[info:888] ABC EQUIPMENT COMPANY",
         "body": "Email 10 content",
         "attachments": []

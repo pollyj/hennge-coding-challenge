@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 1px 1px;
+    grid-template-areas: "search-bar" "main-area";
+  }
+  
+  .search-bar { grid-area: search-bar; }
+  
+  .main-area { grid-area: main-area; }

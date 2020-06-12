@@ -1,0 +1,13 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 0.2fr 2.6fr 0.2fr 0.8fr;
+  grid-template-rows: 0.1fr 0.3fr 2.6fr;
+  gap: 1px 1px;
+  grid-template-areas: "number-of-results number-of-results number-of-results number-of-results number-of-results number-of-results" "top-bar top-bar top-bar top-bar top-bar top-bar" "results results results results results results";
+}
+
+.number-of-results { grid-area: number-of-results; }
+
+.top-bar { grid-area: top-bar; }
+
+.results { grid-area: results; }
