@@ -14,9 +14,7 @@ function App() {
           </div>
         </div>
           <div className="row">
-            <div className="col">
               <ResultsList />
-            </div>
           </div>
       </div>
     </div>

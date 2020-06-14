@@ -1,0 +1,62 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.3fr 2.7fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: 
+        "icon sender attach-icon-and-date attach-icon-and-date" 
+        "icon to to to-icon" 
+        "subject subject subject subject";
+    border-bottom: 1px solid #EAEAEA;
+    padding: 15px 0px;
+    font-size: 0.9em;
+  }
+  
+.subject {
+    grid-area: subject;
+}
+
+.icon {
+    grid-area: icon;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.email-icon {
+    height: 60%;
+    width: 60%;
+}
+
+.to {
+    grid-area: to;
+}
+
+.to-icon {
+    grid-area: to-icon;
+}
+
+.attach-icon-and-date {
+    grid-area: attach-icon-and-date;
+    display: flex;
+    font-size: 0.9em;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.attachment-icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.open-icon {
+    height: 6px;
+    width: 6px;
+    margin-left: 5px;
+}
+
+.sender {
+    grid-area: sender;
+    font-weight: bold;
+}

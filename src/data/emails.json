@@ -1,11 +1,11 @@
 [
     {
         "id": 1,
-        "sent_at_date": "2020/01/03",
-        "sent_at_time": "00:20",
+        "sent_at": "2020/01/03 00:20",
+        "sent_at_time": "",
         "sender": "aaa@example.com",
         "to": [
-            "zzz@example.com"
+            "zzz.zzz@example.com"
         ],
         "subject": "[ HR-888 ] Notice of official announcement",
         "body": "Email 1 content",
@@ -13,8 +13,8 @@
     },
     {
         "id": 2,
-        "sent_at_date": "2020/01/03",
-        "sent_at_time": "00:10",
+        "sent_at": "2020/01/03 00:10",
+        "sent_at_time": "",
         "sender": "bbb@example.com",
         "to": [
             "yyy@example.com"
@@ -25,8 +25,8 @@
     },
     {
         "id": 3,
-        "sent_at_date": "2020/01/03",
-        "sent_at_time": "00:00",
+        "sent_at": "2020/01/03 00:00",
+        "sent_at_time": "",
         "sender": "ccc@example.com",
         "to": [
             "xxx@example.com",
@@ -40,8 +40,8 @@
     },
     {
         "id": 4,
-        "sent_at_date": "2020/01/01",
-        "sent_at_time": "15:00",
+        "sent_at": "2020/01/01 15:00",
+        "sent_at_time": "",
         "sender": "ddd.dddd@example.com",
         "to": [
             "vvv.vvv@example.com",
@@ -53,8 +53,8 @@
     },
     {
         "id": 5,
-        "sent_at_date": "2020/01/01",
-        "sent_at_time": "14:00",
+        "sent_at": "2020/01/01 14:00",
+        "sent_at_time": "",
         "sender": "eee@example.com",
         "to": [
             "sss@example.com",
@@ -67,8 +67,8 @@
     },
     {
         "id": 6,
-        "sent_at_date": "2020/01/01",
-        "sent_at_time": "13:00",
+        "sent_at": "2020/01/01 13:00",
+        "sent_at_time": "",
         "sender": "fff.ffff@example.com",
         "to": [
             "qqq.qqq@example.com"
@@ -79,8 +79,8 @@
     },
     {
         "id": 7,
-        "sent_at_date": "2020/01/01",
-        "sent_at_time": "12:00",
+        "sent_at": "2020/01/01 12:00",
+        "sent_at_time": "",
         "sender": "ggg@example.com",
         "to": [
             "ppp@example.com"
@@ -91,8 +91,8 @@
     },
     {
         "id": 8,
-        "sent_at_date": "2020/01/01",
-        "sent_at_time": "11:00",
+        "sent_at": "2020/01/01 11:00",
+        "sent_at_time": "",
         "sender": "hhh.hhh@example.com",
         "to": [
             "ooo.ooo@example.com"
@@ -105,8 +105,8 @@
     },
     {
         "id": 9,
-        "sent_at_date": "2019/12/31",
-        "sent_at_time": "15:30",
+        "sent_at": "2019/12/31 15:30",
+        "sent_at_time": "",
         "sender": "iii@example.com",
         "to": [
             "nnn@example.com"
@@ -119,8 +119,8 @@
     },
     {
         "id": 10,
-        "sent_at_date": "2019/12/31",
-        "sent_at_time": "15:00",
+        "sent_at": "2019/12/31 15:00",
+        "sent_at_time": "",
         "sender": "Pablo-Diego",
         "to": [
             "Pablo-Diego-José-Francisco"
