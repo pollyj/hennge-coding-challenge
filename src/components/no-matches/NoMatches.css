@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.app-logo {
+    margin-top: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+@media only screen and (min-width: 800px) {
+    .app-logo {
+        margin-top: 30%;
+    }
+}

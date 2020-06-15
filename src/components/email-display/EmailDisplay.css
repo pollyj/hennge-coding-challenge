@@ -1,19 +1,28 @@
+.wrapper {
+    border-bottom: 1px solid #EAEAEA;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: 0.3fr 2.7fr 0.5fr 0.5fr;
+    grid-template-columns: 0.3fr 2.7fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
     grid-template-areas: 
         "icon sender attach-icon-and-date attach-icon-and-date" 
-        "icon to to to-icon" 
-        "subject subject subject subject";
-    border-bottom: 1px solid #EAEAEA;
-    padding: 15px 0px;
-    font-size: 0.9em;
-  }
-  
-.subject {
-    grid-area: subject;
+        "icon to to to" 
+        "email-subject email-subject email-subject email-subject";
+    font-size: 0.8em;
+    align-content: center;
+    padding: 10px 15px;
+}
+
+.recipient-wrapper {
+    display: grid;
+    grid-template-columns: 0.9fr 0.1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: 
+        "recipient-emails to-icon";
 }
 
 .icon {
@@ -23,25 +32,54 @@
     align-items: flex-start;
 }
 
+
 .email-icon {
-    height: 60%;
-    width: 60%;
+    height: 30px;
+    width: 15px;
 }
 
 .to {
     grid-area: to;
+    color: #585858;
+}
+
+.recipient-emails {
+    width: 100%;
 }
 
 .to-icon {
     grid-area: to-icon;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.email-subject {
+    grid-area: email-subject;
+    font-size: 1.1em;
+    color: #333333;
+}
+
+.number {
+    background-color: #888888;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 0px 2px;
+    height: 15px;
+    width: 20px;
+    border-radius: 5px;
+    align-self: center;
 }
 
 .attach-icon-and-date {
     grid-area: attach-icon-and-date;
     display: flex;
-    font-size: 0.9em;
     justify-content: flex-end;
     align-items: center;
+    color: #464646;
 }
 
 .attachment-icon {
@@ -59,4 +97,77 @@
 .sender {
     grid-area: sender;
     font-weight: bold;
+    color: #333333;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+
+.email-body {
+    font-size: 0.9em;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+@media only screen and (min-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.5fr 0.8fr 1.6fr 0.3fr;
+        grid-template-rows: 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "sender to email-subject attach-icon-and-date";
+        font-size: 0.9em;
+        padding: 10px 15px;
+    }
+      
+    .icon {
+        display: none;
+    }
+
+    .recipient-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .recipient-emails {
+        width: 50%;
+    }
+
+    .attach-icon-and-date {
+        display: grid;
+        grid-template-columns: 0.2fr 0.8fr;
+        grid-template-rows: 1fr;
+        gap: 1px 1px;
+        grid-template-areas: 
+            "attachment-icon sent-at";
+    }
+
+    .email-subject {
+        font-size: 1em;
+    }
+
+    .open-icon {
+        display: none;
+    }
+
+    .attachment-icon {
+        margin-left: -10px;
+    }
+
+    .grid-container:hover {
+        background-color: #F6F8FA;
+    }
+
+    .grid-container:hover > div {
+        cursor: pointer;
+        color: #1D41D7;
+    }
+
+    .wrapper:hover {
+        cursor: pointer;
+    }
 }

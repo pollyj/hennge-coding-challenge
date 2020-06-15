@@ -45,6 +45,7 @@
         "sender": "ddd.dddd@example.com",
         "to": [
             "vvv.vvv@example.com",
+            "uuu@example.com",
             "uuu@example.com"
         ],
         "subject": "[HR-887(Revised: Office Expansion Project Team)] Notice of off...",
@@ -59,6 +60,7 @@
         "to": [
             "sss@example.com",
             "rrr@example.com",
+            "ttt@example.com",
             "ttt@example.com"
         ],
         "subject": "[Github] Logout page",

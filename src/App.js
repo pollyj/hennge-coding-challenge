@@ -9,9 +9,7 @@ function App() {
     <div className="App">
       <div className="container-fluid">
         <div className="row">
-          <div className="col">
             <SearchBar />
-          </div>
         </div>
           <div className="row">
               <ResultsList />

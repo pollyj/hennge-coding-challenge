@@ -1,25 +1,17 @@
-/* .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr 0.2fr 2.6fr 0.2fr 0.8fr;
-  grid-template-rows: 0.1fr 0.3fr 2.6fr;
-  gap: 1px 1px;
-  grid-template-areas: "number-of-results number-of-results number-of-results number-of-results number-of-results number-of-results" "top-bar top-bar top-bar top-bar top-bar top-bar" "results results results results results results";
-}
-
-.number-of-results { grid-area: number-of-results; }
-
-.top-bar { grid-area: top-bar; }
-
-.results { grid-area: results; } */
-
 .results-list {
   font-size: 0.8em;
+  width: 100%;
 }
 
 .results-bar {
   margin-top: 15px;
   font-weight: bold;
   font-size: 0.8em;
+  margin-left: 0px;
+}
+
+.results-bar > p {
+  border-bottom: solid 1px #DEDEDE;
 }
 
 .result-number {
@@ -34,9 +26,9 @@
   font-size: 0.8em;
   background-color: #F5F5F5;
   height: 40px;
-  margin-top: 3px;
   border-top: solid 1px #DEDEDE;
   border-bottom: solid 1px #DEDEDE;
+  padding-left: 10px;
 }
 
 p {
@@ -50,14 +42,53 @@ img {
   align-self: center;
 }
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 800px) {
   .top-bar-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-weight: bold;
-    font-size: 0.8em;
-    background-color: #F5F5F5;
-    height: 40px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr 1.6fr 0.3fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: 
+      "sender to subject date-area";
+    align-content: center;
+    font-size: 0.7em;
+    padding: 0px 15px;
+  }
+
+  .results-list {
+    width: 100%;
+  }
+
+  .sender { 
+    grid-area: sender;
+  }
+
+  .to { 
+    grid-area: to;
+   }
+
+  .subject { 
+    grid-area: subject;
+   }
+
+   .date-area {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: 
+        ". date-area";
+  }
+
+  .date {
+    grid-area: date-area;
+  }
+  
+  .divider {
+    display: none;
+  }
+
+  .emails {
+    padding: 0px;
   }
 }

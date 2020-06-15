@@ -5,7 +5,7 @@ import './ResultsList.css';
 import emailData from '../../data/emails.json';
 import upArrow from '../../assets/icon_arrow01.svg'
 
-export default function ResultsList(props) {
+export default function ResultsList() {
 
     const renderSearchResults = () => {
         if (emailData) {
@@ -16,23 +16,30 @@ export default function ResultsList(props) {
     }
 
     return (
-        <div className="results-list container-fluid">
+        <div className="results-list">
             <div className="row">
                 <div className="results-bar col-12">
                     <p>Results: <span className="result-number">10</span> mail(s)</p>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-12 top-bar-wrapper">
-                    <p>From
-                    <img src={upArrow}></img>
-                    </p><p>|</p>
-                    <p>To</p><p>|</p>
-                    <p>Subject</p><p>|</p>
-                    <p>Date</p>
-                </div>
+            <div className="top-bar-wrapper">
+                <p className="sender">From{" "}
+                    <img src={upArrow} alt="up arrow"></img>
+                </p>
+                <p className="divider">|</p>
+                <p className="to">To</p>
+                <p className="divider">|</p>
+                <p className="subject">Subject</p>
+                <p className="divider">|</p>
+                <p className="date-area">
+                        <div className="date">
+                            Date
+                        </div>
+                    </p>
             </div>
-            {renderSearchResults()}
+            <div className="emails">
+                {renderSearchResults()}
+            </div>
         </div>
     )
 }
