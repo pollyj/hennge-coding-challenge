@@ -5,10 +5,9 @@ import emailIcon from '../../assets/icon_mail_sp.svg';
 import attachmentIcon from '../../assets/icon_clip.svg';
 import openArrow from '../../assets/icon_arrow02.svg';
 
+export default function EmailDisplay(props) {
 
-
-export default function EmailDisplay({ props } = props.props) {
-
+    props = props.props;
     const [screenSize, setScreenSize] = useState(window.innerWidth);
     const [emailIsDisplayed, setEmailIsDisplayed] = useState(false);
 
@@ -18,14 +17,14 @@ export default function EmailDisplay({ props } = props.props) {
     
     const renderTime = (date) => {
         const today = "2020/01/03"
-        // normally dates wouldn't be hardcoded so I would compare with e.g. new Date() but for the purposes of this mockup, the dates are hardcoded
+        // hardcoded for ui mockup
 
         if (date.split(" ")[0] === today) {
-            return moment(date).format("H:mm");
-        } else if (moment(date).isSame(new Date(), 'year')) {
-            return moment(date).format("MMM DD");
+            return moment(date, "YYYY/MM/DD HH:mm").format("H:mm");
+        } else if (moment(date, "YYYY/MM/DD HH:mm").isSame(new Date(), 'year')) {
+            return moment(date, "YYYY/MM/DD HH:mm").format("MMM DD");
         } else {
-            return moment(date).format("YYYY/MM/DD")
+            return moment(date, "YYYY/MM/DD HH:mm").format("YYYY/MM/DD")
         }
     }
 

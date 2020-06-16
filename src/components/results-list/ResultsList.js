@@ -9,7 +9,7 @@ export default function ResultsList() {
 
     const renderSearchResults = () => {
         if (emailData) {
-            return emailData.map((email) => <EmailDisplay props={email} />)
+            return emailData.map((email) => <EmailDisplay key={email.id} props={email} />)
         } else {
             return <NoMatches />
         }
@@ -31,11 +31,11 @@ export default function ResultsList() {
                 <p className="divider">|</p>
                 <p className="subject">Subject</p>
                 <p className="divider">|</p>
-                <p className="date-area">
+                <div className="date-area">
                         <div className="date">
                             Date
                         </div>
-                    </p>
+                    </div>
             </div>
             <div className="emails">
                 {renderSearchResults()}

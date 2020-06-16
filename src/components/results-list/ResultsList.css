@@ -12,6 +12,7 @@
 
 .results-bar > p {
   border-bottom: solid 1px #DEDEDE;
+  padding-left: 15px;
 }
 
 .result-number {
@@ -26,9 +27,8 @@
   font-size: 0.8em;
   background-color: #F5F5F5;
   height: 40px;
-  border-top: solid 1px #DEDEDE;
   border-bottom: solid 1px #DEDEDE;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 
 p {
@@ -59,6 +59,10 @@ img {
     width: 100%;
   }
 
+  .results-bar > p {
+    padding-left: 0px;
+  }
+
   .sender { 
     grid-area: sender;
   }
@@ -71,7 +75,7 @@ img {
     grid-area: subject;
    }
 
-   .date-area {
+  .date-area {
     display: grid;
     grid-template-columns: 0.2fr 0.8fr;
     grid-template-rows: 1fr;
