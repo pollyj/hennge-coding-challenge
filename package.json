@@ -5,7 +5,7 @@
   "author": "Polly Sutcliffe",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
+    "@testing-library/react": "^10.4.7",
     "@testing-library/user-event": "^7.1.2",
     "moment": "^2.26.0",
     "react": "^16.13.1",
